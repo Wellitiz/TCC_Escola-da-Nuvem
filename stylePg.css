@@ -1,0 +1,471 @@
+body{
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    font-family: Verdana;
+    background-color: #e5e4e2;
+}
+
+/* Inicio Seção 1 (Parte superio do menu) */
+.boxmain{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.boxm1{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #888686;
+}
+.logo img{
+    width: 190px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.menu a{
+    padding: 5px 20PX;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+#mn:hover{
+    background-color: #977631;
+    transition: 0.3s;
+    color: #333;
+}
+.boxverde{
+    background: rgb(255,255,241);
+    background: linear-gradient(90deg, rgba(255,255,241,1) 0%, rgba(129,96,28,1) 35%, rgba(225,217,190,1) 67%, rgba(87,57,5,1) 100%);
+    height: 10px;
+}
+
+@media screen and (max-width: 1360px){
+    .menu a{
+        padding: 5px 5PX;
+    }
+}
+
+@media screen and (max-width:800px){
+    .boxm1{
+        height: 50px;
+    }
+    .logo img{
+        width: 120px;
+        height: 40px;
+    }
+    .menu{
+        gap: 15px;
+    }
+    .menu a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .boxm1{
+        height: 40px;
+    }
+    .logo img{
+        width: 80px;
+        height: 30px;
+    }
+    .menu{
+        gap: 10px;
+    }
+    .menu a{
+        font-size: 12px;
+    }
+    .boxverde{
+        height: 5px;
+    }
+}
+
+
+
+.NomeP{
+    display: flex;
+    margin: 70px 0 0 0;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.NomeP img{
+    width: 300px;
+    padding: 0px 20px;
+}
+
+.NomeC{
+    padding: 60px 50px 0px 50px;
+}
+
+.NomeC h2{
+    color: #888686;
+    margin: 0;
+    padding: 0;
+}
+
+.NomeC h1{
+    color: #f8bb10;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.NomeC p{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #888686;
+}
+
+.Cargo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Cargo img{
+    width: 30px;
+}
+
+@media screen and (max-width:800px){
+    .FotoPrincipal{
+        display: flex;
+        justify-content: center;
+    }
+    .NomeP{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 0 0;
+        padding: 50px 0;
+        justify-content: center;
+    }
+    .NomeC{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .Cargo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:700px){
+    .NomeC{
+        padding: 30px 50px 0px 50px;
+    }
+}
+@media screen and (max-width:500px){
+    .NomeC{
+        padding: 20px 30px 0px 30px;
+    }
+    .NomeC h1{
+        font-size: 50px;
+    }
+    .NomeC p{
+        font-size: 20px;
+    }
+}
+
+
+
+.Inf{
+    display: flex;
+    justify-content: space-around;
+    color: #888686;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.Inf h1{
+    font-size: 20px;
+}
+
+.Inf p{
+    font-size: 18px;
+}
+
+.Inf p:hover{
+    color: #f8bb10;
+    transition: .5s;
+}
+
+.Inf a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #888686;
+}
+
+
+@media screen and (max-width:1000px){
+    .Inf{
+        width: 100%;
+    } 
+}
+@media screen and (max-width:700px){
+    .Inf>div{
+        text-align: center;
+    }
+    .Inf h1{
+        font-size: 15px;
+    }
+    .Inf p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:450px){
+    .Inf h1{
+        font-size: 12px;
+    }
+    .Inf p{
+        font-size: 10px;
+    }
+}
+
+.About{
+    color: #888686;
+    width: 1000px;
+    margin: 80px auto;
+}
+
+.About h1{
+    color: #1E1E1E;
+}
+
+
+@media screen and (max-width:1200px){
+    .About{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 40px auto;
+    }
+}
+@media screen and (max-width:600px){
+    .About p{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+.Skills{
+    color: #888686;
+    width: 1000px;
+    margin: 80px auto;
+}
+
+.Skills h1{
+    color: #1E1E1E;
+}
+
+.Skil{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.Ski{
+    width: 300px;
+}
+
+.Ski h2{
+    color: #f8bb10;
+}
+
+@media screen and (max-width:1200px){
+    .Skills{
+        width: 80%;
+        margin: 40px auto;
+    }
+    .Skil{
+        justify-content: space-around;
+    }
+}
+
+
+
+
+.EXPERTISE{
+    color: #888686;
+    width: 1000px;
+    margin: 80px auto;
+}
+
+.EXPERTISE h1{
+    color: #1E1E1E;
+}
+
+.Experi{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.Exp{
+    width: 300px;
+}
+
+.Exp h2{
+    color: #f8bb10;
+}
+
+.atribuições{
+    padding: 50px 0;
+    width: 700px;
+}
+
+@media screen and (max-width:1200px){
+    .EXPERTISE{
+        width: 80%;
+        margin: 40px auto;
+    }
+}
+@media screen and (max-width:800px){
+    .atribuições{
+        width: 85%;
+    }
+}
+@media screen and (max-width:600px){
+    .EXPERTISE{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .Experi{
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .Experi p{
+        margin: 0;
+        padding: 0;
+    }
+    .Experi h2{
+        margin: 0;
+        padding: 0;
+    }
+    .Exp{
+        margin: 0 auto;
+    }
+    .atribuições{
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+
+
+/* Inicio Seção 6 (Parte referente aos contatos e redes sociais) */
+.inf_pag{
+    display:flex;
+    padding: 30px 0;
+    background-color: #888686;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.Campo_contato{
+    display: flex;
+    gap: 20px;
+}
+
+.Campo_contato img{
+    width: 150px;
+}
+
+
+#CV{
+    display: flex;
+    justify-content: left;
+    margin: 20px 0 0 0;
+    text-decoration: none;
+}
+
+#CV button{
+    background-color: #f8bb10;
+    color: #333;
+    padding:  5px 10px;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+#CV button:hover{
+    background-color: #977631;
+    color: #e5e4e2;
+    transition: 0.s;
+}
+
+@media screen and (max-width:800px){
+    #CV{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Copy */
+.copy{ 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: #1E1E1E;
+}
+
+
+
+
+
+[data-anime] {
+    opacity: 0;
+    transition: 0.9s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"]{
+    transform: translate3d(0, -100, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
